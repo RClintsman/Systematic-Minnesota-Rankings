@@ -5,7 +5,7 @@ type ILogoProps = {
 };
 
 const Logo = (props: ILogoProps) => {
-  const size = props.xl ? '44' : '32';
+  const size = props.xl ? '50' : '32';
   const fontStyle = props.xl
     ? 'font-semibold text-3xl'
     : 'font-semibold text-xl';
@@ -23,13 +23,18 @@ const Logo = (props: ILogoProps) => {
         strokeLinecap="round"
         strokeLinejoin="round"
       >
-        <path d="M0 0h24v24H0z" stroke="none" />
+        {/* <path d="M0 0h24v24H0z" stroke="none" />
         <rect x="3" y="12" width="6" height="8" rx="1" />
         <rect x="9" y="8" width="6" height="12" rx="1" />
         <rect x="15" y="4" width="6" height="16" rx="1" />
-        <path d="M4 20h14" />
+        <path d="M4 20h14" /> */}
       </svg>
-
+      <img
+        src="/assets/images/Melee_Seal_D_Icon_Transparent.png"
+        width="100"
+        height="100"
+        alt="Logo"
+      ></img>
       {AppConfig.site_name}
     </span>
   );

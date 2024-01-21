@@ -1,8 +1,6 @@
 import Link from 'next/link';
 
 import { Background } from '../background/Background';
-import { Button } from '../button/Button';
-import { HeroOneButton } from '../hero/HeroOneButton';
 import { Section } from '../layout/Section';
 import { NavbarTwoColumns } from '../navigation/NavbarTwoColumns';
 import { Logo } from './Logo';
@@ -12,15 +10,14 @@ const Hero = () => (
     <Section yPadding="py-6">
       <NavbarTwoColumns logo={<Logo xl />}>
         <li>
-          <Link href="https://github.com/ixartz/Next-JS-Landing-Page-Starter-Template">
+          <Link href="https://github.com/RClintsman/Systematic-Minnesota-Rankings">
             GitHub
           </Link>
         </li>
-        <li>
-          <Link href="/">Sign in</Link>
-        </li>
       </NavbarTwoColumns>
     </Section>
+
+    {/* Commenting this section out and will most likely delete later.
 
     <Section yPadding="pt-20 pb-32">
       <HeroOneButton
@@ -37,7 +34,7 @@ const Hero = () => (
           </Link>
         }
       />
-    </Section>
+    </Section> */}
   </Background>
 );
 
